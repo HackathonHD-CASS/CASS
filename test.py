@@ -92,7 +92,7 @@ whole_name = dir_name+file_name+'.log.csv'
 f = open(whole_name, 'r')
 lines = f.readlines()
 i=1
-
+print "start"
 for l in lines[:line_num]:
 	if not l[0] == ',':
 		d = l.strip().split(',')
