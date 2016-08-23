@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.perples.recosample.MainActivity" >
+
+    <TextView
+        android:id="@+id/monitoringToggleButtonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="심박수 모니터링 서비스"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <ToggleButton
+        android:id="@+id/backgroundMonitoringToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/monitoringToggleButtonLabel"
+        android:layout_alignBottom="@+id/monitoringToggleButtonLabel"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/monitoringToggleButtonLabel"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:onClick="onMonitoringToggleButtonClicked"/>
+    
+    <TextView
+        android:id="@+id/rangingToggleButtonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/monitoringToggleButtonLabel"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="주변 차량 모니터링 서비스"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <ToggleButton
+        android:id="@+id/backgroundRangingToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rangingToggleButtonLabel"
+        android:layout_alignBottom="@+id/rangingToggleButtonLabel"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/rangingToggleButtonLabel"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:onClick="onRangingToggleButtonClicked"/>
+
+    <TextView
+        android:id="@+id/carGPSmoniteringLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rangingToggleButtonLabel"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="운전 차량 GPS 전송 서비스"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <ToggleButton
+        android:id="@+id/carGPSmoniteringToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/carGPSmoniteringLabel"
+        android:layout_alignBottom="@+id/carGPSmoniteringLabel"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/carGPSmoniteringLabel"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:onClick="onRangingToggleButtonClicked"/>
+    
+    
+    <Button
+        android:id="@+id/monitoringButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carGPSmoniteringLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="119 SMS 서비스" 
+        android:onClick="onButtonClicked"/>
+
+    <Button
+        android:id="@+id/rangingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/monitoringButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="심박수 뷰어" 
+        android:onClick="onButtonClicked"/>
+
+    
+
+</RelativeLayout>
