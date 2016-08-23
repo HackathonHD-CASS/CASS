@@ -68,7 +68,7 @@ def cal_Dir(pre_x, pre_y, x, y):
 direc = DEG_ERR
 emergency = 'n'
 
-dir_name = './data2/'
+dir_name = '../data2/'
 
 car_code = sys.argv[1]
 if car_code == 'r':
