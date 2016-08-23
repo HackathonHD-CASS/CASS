@@ -54,7 +54,7 @@ def cal_Suddenstop(pres, now, r_type, r_deg):
 			if now_acc>ACC_TH: print 'in func:',pres, now
 			'''
 			if now_acc > ACC_TH and now_acc > ACC_MUL*(sum(pre_acc)/len(pre_acc))+MIN_ACC:
-				print ACC_TH, (100+r_deg) / 100, pres, now
+		#		print ACC_TH, (100+r_deg) / 100, pres, now
 				return 'y'
 	return 'n'
 
@@ -164,6 +164,6 @@ for l in lines[:line_num]:
 
 			os.system('curl "'+s+'"')
 
-			print i, 'gps:',car.lat, car.lon, isACC, emergency	
+		#	print i, 'gps:',car.lat, car.lon, isACC, emergency	
 		time.sleep(1)
 	i+=1
