@@ -164,6 +164,6 @@ for l in lines[:line_num]:
 
 			os.system('curl "'+s+'"')
 
-		#	print i, 'gps:',car.lat, car.lon, isACC, emergency	
+			print i, 'gps:',car.lat, car.lon, isACC, emergency	
 		time.sleep(1)
 	i+=1
